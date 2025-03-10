@@ -1,0 +1,42 @@
+{
+    "build": {
+        "core": "stm32",
+        "cpu": "cortex-m4",
+        "extra_flags": "-DSTM32L412xx -DUSBCON -DUSBD_USE_CDC",
+        "f_cpu": "80000000L",
+        "hwids": [
+            [
+                "0x0483",
+                "0x374B"
+            ]
+        ],
+        "mcu": "stm32l412rbt6",
+        "variant": "L412RB_P",
+        "variants_dir": "variants",
+        "ldscript": "variants/L412RB_P/STM32L412RBTXP_FLASH.ld"
+    },
+    "debug": {
+        "default_tools": [
+            "stlink"
+        ],
+        "onboard_tools": [
+            "stlink"
+        ],
+        "openocd_target": "stm32l4x",
+        "svd_path": "STM32L4x2.svd"
+    },
+    "frameworks": [
+        "arduino"
+    ],
+    "name": "L412RB_P",
+    "upload": {
+        "maximum_ram_size": 32768,
+        "maximum_size": 131072,
+        "protocol": "stlink",
+        "protocols": [
+            "stlink"
+        ]
+    },
+    "url": "https://www.st.com/en/evaluation-tools/nucleo-l412rb-p.html",
+    "vendor": "ST"
+}
