@@ -3,46 +3,58 @@
 
 #include "PushButton.h"
 
-// Set a maximum number of buttons that can be managed.
+// Maximum number of buttons to manage.
 #define MAX_BUTTONS 10
 
 class ButtonManager {
 public:
   ButtonManager() : _buttonCount(0) {
-    // Initialize the pointers array to nullptr.
+    // Initialize the array pointers to nullptr.
     for (int i = 0; i < MAX_BUTTONS; i++) {
       _buttons[i] = nullptr;
     }
   }
 
-  // Dynamically creates a new PushButton.
-  // Returns the index of the new button or -1 if no space is available.
-  int addButton(uint8_t pin, bool activeLow = true, unsigned long debounceDelay = 50) {
-    if (_buttonCount >= MAX_BUTTONS) {
-      return -1; // Manager is full.
+  // assignFunction creates a new button for a given pin if it does not exist,
+  // sets the callbacks, and returns true if successful.
+  bool assignFunction(uint8_t pin, Callback onPress, Callback onRelease,
+                      bool activeLow = true, unsigned long debounceDelay = 50) {
+    PushButton* btn = findButton(pin);
+    if (btn == nullptr) {
+      // Create a new button if there's room.
+      if (_buttonCount >= MAX_BUTTONS) {
+        return false; // No space available.
+      }
+      btn = new PushButton(pin, activeLow, debounceDelay);
+      _buttons[_buttonCount++] = btn;
     }
-    _buttons[_buttonCount] = new PushButton(pin, activeLow, debounceDelay);
-    return _buttonCount++;
+    // Attach the callbacks.
+    btn->attachOnPress(onPress);
+    btn->attachOnRelease(onRelease);
+    return true;
   }
 
-  // Attach the onPress callback for the button at the given index.
-  void attachOnPress(int idx, Callback callback) {
-    if (isValidIndex(idx)) {
-      _buttons[idx]->attachOnPress(callback);
+  // modify locates an existing button by pin and modifies its parameters.
+  // Returns true if the button was found and modified, false otherwise.
+  bool modify(uint8_t pin, Callback onPress, Callback onRelease,
+              bool activeLow, unsigned long debounceDelay) {
+    PushButton* btn = findButton(pin);
+    if (btn == nullptr) {
+      return false; // No button found with the specified pin.
     }
-  }
-
-  // Attach the onRelease callback for the button at the given index.
-  void attachOnRelease(int idx, Callback callback) {
-    if (isValidIndex(idx)) {
-      _buttons[idx]->attachOnRelease(callback);
-    }
+    btn->setActiveLow(activeLow);
+    btn->setDebounceDelay(debounceDelay);
+    btn->attachOnPress(onPress);
+    btn->attachOnRelease(onRelease);
+    return true;
   }
 
   // Call this method in your main loop to update all buttons.
   void process() {
     for (int i = 0; i < _buttonCount; i++) {
-      _buttons[i]->process();
+      if (_buttons[i] != nullptr) {
+        _buttons[i]->process();
+      }
     }
   }
 
@@ -50,9 +62,14 @@ private:
   PushButton* _buttons[MAX_BUTTONS];
   int _buttonCount;
 
-  // Checks if the provided index is valid.
-  bool isValidIndex(int idx) {
-    return idx >= 0 && idx < _buttonCount;
+  // Searches for an existing button by its pin.
+  PushButton* findButton(uint8_t pin) {
+    for (int i = 0; i < _buttonCount; i++) {
+      if (_buttons[i] && _buttons[i]->getPin() == pin) {
+        return _buttons[i];
+      }
+    }
+    return nullptr;
   }
 };
 

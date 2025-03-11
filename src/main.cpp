@@ -71,24 +71,12 @@ void setup() {
   int idx = 0;
 
   // Add buttons to the manager.
-  idx = buttons.addButton(BUTTON1_PIN);
-  buttons.attachOnPress(idx, onPressButton1);
-  buttons.attachOnRelease(idx, onReleaseButton1);
-  idx = buttons.addButton(BUTTON2_PIN);
-  buttons.attachOnPress(idx, onPressButton2);
-  buttons.attachOnRelease(idx, onReleaseButton2);
-  idx = buttons.addButton(BUTTON3_PIN);
-  buttons.attachOnPress(idx, onPressButton3);
-  buttons.attachOnRelease(idx, onReleaseButton3);
-  idx = buttons.addButton(BUTTON4_PIN);
-  buttons.attachOnPress(idx, onPressButton4);
-  buttons.attachOnRelease(idx, onReleaseButton4);
-  idx = buttons.addButton(BUTTON5_PIN);
-  buttons.attachOnPress(idx, onPressButton5);
-  buttons.attachOnRelease(idx, onReleaseButton5);
-  idx = buttons.addButton(BUTTON6_PIN);
-  buttons.attachOnPress(idx, onPressButton6);
-  buttons.attachOnRelease(idx, onReleaseButton6);
+  buttons.assignFunction(BUTTON1_PIN, onPressButton1, onReleaseButton1);
+  buttons.assignFunction(BUTTON2_PIN, onPressButton2, onReleaseButton2);
+  buttons.assignFunction(BUTTON3_PIN, onPressButton3, onReleaseButton3);
+  buttons.assignFunction(BUTTON4_PIN, onPressButton4, onReleaseButton4);
+  buttons.assignFunction(BUTTON5_PIN, onPressButton5, onReleaseButton5);
+  buttons.assignFunction(BUTTON6_PIN, onPressButton6, onReleaseButton6);
 
   Serial.begin(115200);
   Serial.println("Button Manager Example");

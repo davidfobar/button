@@ -1,4 +1,3 @@
-// PushButton.h
 #ifndef PUSHBUTTON_H
 #define PUSHBUTTON_H
 
@@ -11,8 +10,8 @@ class PushButton {
 public:
   // Constructor:
   // - pin: The Arduino pin the button is connected to.
-  // - activeLow: Set to true if the button is active when the pin reads LOW (using internal pull-up),
-  //   or false if the button is active when the pin reads HIGH.
+  // - activeLow: True if the button is active when the pin reads LOW (using internal pull-up),
+  //   false if the button is active when the pin reads HIGH.
   // - debounceDelay: The debounce time in milliseconds.
   PushButton(uint8_t pin, bool activeLow = true, unsigned long debounceDelay = 50)
     : _pin(pin),
@@ -22,7 +21,7 @@ public:
       _onPressCallback(nullptr),
       _onReleaseCallback(nullptr)
   {
-    // Configure the pin mode.
+    // Configure the pin mode based on polarity.
     if (_activeLow) {
       pinMode(_pin, INPUT_PULLUP);
     } else {
@@ -33,9 +32,25 @@ public:
     _lastState = _currentState;
   }
 
-  // Callback registration methods.
+  // Attach callback functions.
   void attachOnPress(Callback callback)   { _onPressCallback = callback; }
   void attachOnRelease(Callback callback) { _onReleaseCallback = callback; }
+
+  // Setter for debounce delay.
+  void setDebounceDelay(unsigned long delay) { _debounceDelay = delay; }
+
+  // Setter for activeLow; reconfigure the pin mode.
+  void setActiveLow(bool activeLow) {
+    _activeLow = activeLow;
+    if (_activeLow) {
+      pinMode(_pin, INPUT_PULLUP);
+    } else {
+      pinMode(_pin, INPUT);
+    }
+  }
+
+  // Retrieve the pin number for lookup.
+  uint8_t getPin() const { return _pin; }
 
   // Call this function in the main loop to poll the button.
   void process() {
@@ -52,12 +67,12 @@ public:
       // Only act if the state has changed.
       if (reading != _currentState) {
         _currentState = reading;
-        // If the button is considered pressed, trigger the onPress callback.
+        // Call onPress when the button is considered pressed.
         if (isPressed(_currentState)) {
           if (_onPressCallback) {
             _onPressCallback();
           }
-        } else { // Otherwise, it's released.
+        } else { // Otherwise, call onRelease.
           if (_onReleaseCallback) {
             _onReleaseCallback();
           }
@@ -74,12 +89,12 @@ private:
   bool _lastState;
   bool _currentState;
   unsigned long _lastDebounceTime;
-  
+
   // Callback function pointers.
   Callback _onPressCallback;
   Callback _onReleaseCallback;
 
-  // Reads the raw state of the pin.
+  // Reads the raw state from the pin.
   bool getRawState() {
     return digitalRead(_pin);
   }
