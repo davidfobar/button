@@ -2356,8 +2356,6 @@ Discarded input sections
                 0x00000000       0x16 .pio/build/L412RB_P_debug/SrcWrapper/src/HardwareTimer.cpp.o
  .text._ZN13HardwareTimerC2Ev
                 0x00000000       0x20 .pio/build/L412RB_P_debug/SrcWrapper/src/HardwareTimer.cpp.o
- .text._ZNSt8functionIFvvEEC2ERKS1_
-                0x00000000       0x24 .pio/build/L412RB_P_debug/SrcWrapper/src/HardwareTimer.cpp.o
  .text._ZNSt8functionIFvvEEaSERKS1_.isra.0
                 0x00000000       0x42 .pio/build/L412RB_P_debug/SrcWrapper/src/HardwareTimer.cpp.o
  .text._ZN13HardwareTimer15attachInterruptEmSt8functionIFvvEE
@@ -2873,10 +2871,6 @@ Discarded input sections
  .text          0x00000000        0x0 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
  .data          0x00000000        0x0 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
  .bss           0x00000000        0x0 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
- .text._ZNSt17_Function_handlerIFvvEPS0_E10_M_managerERSt9_Any_dataRKS3_St18_Manager_operation
-                0x00000000       0x20 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
- .text._ZNSt17_Function_handlerIFvvEPS0_E9_M_invokeERKSt9_Any_data
-                0x00000000        0x4 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
  .text._ZNSt14_Function_baseD2Ev
                 0x00000000       0x12 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
  .text._Z23stm32_interrupt_disableP12GPIO_TypeDeft
@@ -2961,11 +2955,27 @@ Discarded input sections
  .comment       0x00000000       0x3a .pio/build/L412RB_P_debug/src/PushButton.cpp.o
  .ARM.attributes
                 0x00000000       0x34 .pio/build/L412RB_P_debug/src/PushButton.cpp.o
+ .group         0x00000000        0x8 .pio/build/L412RB_P_debug/src/main.cpp.o
+ .group         0x00000000        0x8 .pio/build/L412RB_P_debug/src/main.cpp.o
+ .group         0x00000000        0x8 .pio/build/L412RB_P_debug/src/main.cpp.o
+ .group         0x00000000        0xc .pio/build/L412RB_P_debug/src/main.cpp.o
+ .group         0x00000000        0x8 .pio/build/L412RB_P_debug/src/main.cpp.o
+ .group         0x00000000        0xc .pio/build/L412RB_P_debug/src/main.cpp.o
  .text          0x00000000        0x0 .pio/build/L412RB_P_debug/src/main.cpp.o
  .data          0x00000000        0x0 .pio/build/L412RB_P_debug/src/main.cpp.o
  .bss           0x00000000        0x0 .pio/build/L412RB_P_debug/src/main.cpp.o
+ .text._ZNSt17_Function_handlerIFvvEPS0_E10_M_managerERSt9_Any_dataRKS3_St18_Manager_operation
+                0x00000000       0x20 .pio/build/L412RB_P_debug/src/main.cpp.o
+ .text._ZNSt17_Function_handlerIFvvEPS0_E9_M_invokeERKSt9_Any_data
+                0x00000000        0x4 .pio/build/L412RB_P_debug/src/main.cpp.o
  .text._gettimeofday
                 0x00000000       0x2c .pio/build/L412RB_P_debug/src/main.cpp.o
+ .text._ZNSt14_Function_baseD2Ev
+                0x00000000       0x12 .pio/build/L412RB_P_debug/src/main.cpp.o
+ .text._ZNKSt8functionIFvvEEclEv
+                0x00000000       0x12 .pio/build/L412RB_P_debug/src/main.cpp.o
+ .text._ZNSt8functionIFvvEEC2ERKS1_
+                0x00000000       0x24 .pio/build/L412RB_P_debug/src/main.cpp.o
  .text          0x00000000        0x0 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
  .data          0x00000000        0x0 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
  .bss           0x00000000        0x0 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
@@ -4542,7 +4552,7 @@ LOAD /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm
                 0x08000000                g_pfnVectors
                 0x0800018c                        . = ALIGN (0x4)
 
-.text           0x0800018c     0x3cfc
+.text           0x0800018c     0x3e90
                 0x0800018c                        . = ALIGN (0x4)
  *(.text)
  .text          0x0800018c       0x30 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
@@ -4787,602 +4797,618 @@ LOAD /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm
                 0x08001f18       0x2a .pio/build/L412RB_P_debug/SrcWrapper/src/HardwareTimer.cpp.o
                 0x08001f18                HardwareTimer::HardwareTimer(TIM_TypeDef*)
                 0x08001f18                HardwareTimer::HardwareTimer(TIM_TypeDef*)
+ .text._ZNSt8functionIFvvEEC2ERKS1_
+                0x08001f42       0x24 .pio/build/L412RB_P_debug/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001f42                std::function<void ()>::function(std::function<void ()> const&)
+                0x08001f42                std::function<void ()>::function(std::function<void ()> const&)
  .text._ZNKSt8functionIFvvEEclEv
-                0x08001f42       0x12 .pio/build/L412RB_P_debug/SrcWrapper/src/HardwareTimer.cpp.o
-                0x08001f42                std::function<void ()>::operator()() const
+                0x08001f66       0x12 .pio/build/L412RB_P_debug/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001f66                std::function<void ()>::operator()() const
  .text._ZN13HardwareTimer14updateCallbackEP17TIM_HandleTypeDef
-                0x08001f54       0x18 .pio/build/L412RB_P_debug/SrcWrapper/src/HardwareTimer.cpp.o
-                0x08001f54                HardwareTimer::updateCallback(TIM_HandleTypeDef*)
+                0x08001f78       0x18 .pio/build/L412RB_P_debug/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001f78                HardwareTimer::updateCallback(TIM_HandleTypeDef*)
  .text.HAL_TIM_PeriodElapsedCallback
-                0x08001f6c        0x4 .pio/build/L412RB_P_debug/SrcWrapper/src/HardwareTimer.cpp.o
-                0x08001f6c                HAL_TIM_PeriodElapsedCallback
+                0x08001f90        0x4 .pio/build/L412RB_P_debug/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001f90                HAL_TIM_PeriodElapsedCallback
  .text._ZN13HardwareTimer22captureCompareCallbackEP17TIM_HandleTypeDef
-                0x08001f70       0x3e .pio/build/L412RB_P_debug/SrcWrapper/src/HardwareTimer.cpp.o
-                0x08001f70                HardwareTimer::captureCompareCallback(TIM_HandleTypeDef*)
+                0x08001f94       0x3e .pio/build/L412RB_P_debug/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001f94                HardwareTimer::captureCompareCallback(TIM_HandleTypeDef*)
  .text.HAL_TIM_OC_DelayElapsedCallback
-                0x08001fae        0x4 .pio/build/L412RB_P_debug/SrcWrapper/src/HardwareTimer.cpp.o
-                0x08001fae                HAL_TIM_OC_DelayElapsedCallback
+                0x08001fd2        0x4 .pio/build/L412RB_P_debug/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001fd2                HAL_TIM_OC_DelayElapsedCallback
  .text.HAL_TIM_IC_CaptureCallback
-                0x08001fb2        0x4 .pio/build/L412RB_P_debug/SrcWrapper/src/HardwareTimer.cpp.o
-                0x08001fb2                HAL_TIM_IC_CaptureCallback
- .text._Znwj    0x08001fb6        0x4 .pio/build/L412RB_P_debug/SrcWrapper/src/new.cpp.o
-                0x08001fb6                operator new(unsigned int)
- .text._ZdlPvj  0x08001fba        0x4 .pio/build/L412RB_P_debug/SrcWrapper/src/new.cpp.o
-                0x08001fba                operator delete(void*, unsigned int)
- *fill*         0x08001fbe        0x2 
+                0x08001fd6        0x4 .pio/build/L412RB_P_debug/SrcWrapper/src/HardwareTimer.cpp.o
+                0x08001fd6                HAL_TIM_IC_CaptureCallback
+ .text._Znwj    0x08001fda        0x4 .pio/build/L412RB_P_debug/SrcWrapper/src/new.cpp.o
+                0x08001fda                operator new(unsigned int)
+ .text._ZdlPvj  0x08001fde        0x4 .pio/build/L412RB_P_debug/SrcWrapper/src/new.cpp.o
+                0x08001fde                operator delete(void*, unsigned int)
+ *fill*         0x08001fe2        0x2 
  .text.set_GPIO_Port_Clock
-                0x08001fc0       0xa4 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/PortNames.c.o
-                0x08001fc0                set_GPIO_Port_Clock
+                0x08001fe4       0xa4 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/PortNames.c.o
+                0x08001fe4                set_GPIO_Port_Clock
  .text.pwm_stop
-                0x08002064       0x5c .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/analog.cpp.o
-                0x08002064                pwm_stop
+                0x08002088       0x5c .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/analog.cpp.o
+                0x08002088                pwm_stop
  .text.getCurrentMillis
-                0x080020c0        0x4 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/clock.c.o
-                0x080020c0                getCurrentMillis
+                0x080020e4        0x4 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/clock.c.o
+                0x080020e4                getCurrentMillis
  .text.noOsSystickHandler
-                0x080020c4        0x2 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/clock.c.o
-                0x080020c4                noOsSystickHandler
-                0x080020c4                osSystickHandler
+                0x080020e8        0x2 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/clock.c.o
+                0x080020e8                noOsSystickHandler
+                0x080020e8                osSystickHandler
  .text.SysTick_Handler
-                0x080020c6       0x10 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/clock.c.o
-                0x080020c6                SysTick_Handler
- *fill*         0x080020d6        0x2 
+                0x080020ea       0x10 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/clock.c.o
+                0x080020ea                SysTick_Handler
+ *fill*         0x080020fa        0x2 
  .text.enableClock
-                0x080020d8       0xcc .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/clock.c.o
-                0x080020d8                enableClock
+                0x080020fc       0xcc .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/clock.c.o
+                0x080020fc                enableClock
  .text.configHSECapacitorTuning
-                0x080021a4        0x2 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/clock.c.o
-                0x080021a4                configHSECapacitorTuning
- *fill*         0x080021a6        0x2 
+                0x080021c8        0x2 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/clock.c.o
+                0x080021c8                configHSECapacitorTuning
+ *fill*         0x080021ca        0x2 
  .text.configIPClock
-                0x080021a8       0x44 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/clock.c.o
-                0x080021a8                configIPClock
+                0x080021cc       0x44 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/clock.c.o
+                0x080021cc                configIPClock
  .text.dwt_init
-                0x080021ec       0x3c .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/dwt.c.o
-                0x080021ec                dwt_init
+                0x08002210       0x3c .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/dwt.c.o
+                0x08002210                dwt_init
  .text.hw_config_init
-                0x08002228       0x24 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/hw_config.c.o
-                0x08002228                hw_config_init
+                0x0800224c       0x24 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/hw_config.c.o
+                0x0800224c                hw_config_init
+ .text._ZNSt17_Function_handlerIFvvEPS0_E10_M_managerERSt9_Any_dataRKS3_St18_Manager_operation
+                0x08002270       0x20 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x08002270                std::_Function_handler<void (), void (*)()>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+ .text._ZNSt17_Function_handlerIFvvEPS0_E9_M_invokeERKSt9_Any_data
+                0x08002290        0x4 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x08002290                std::_Function_handler<void (), void (*)()>::_M_invoke(std::_Any_data const&)
  .text.startup._ZNSt8functionIFvvEEC2EDn.constprop.0.isra.0
-                0x0800224c        0xc .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x08002294        0xc .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
  .text.HAL_GPIO_EXTI_Callback
-                0x08002258       0x2c .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
-                0x08002258                HAL_GPIO_EXTI_Callback
+                0x080022a0       0x2c .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x080022a0                HAL_GPIO_EXTI_Callback
  .text.EXTI0_IRQHandler
-                0x08002284        0x6 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
-                0x08002284                EXTI0_IRQHandler
+                0x080022cc        0x6 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x080022cc                EXTI0_IRQHandler
  .text.EXTI1_IRQHandler
-                0x0800228a        0x6 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
-                0x0800228a                EXTI1_IRQHandler
+                0x080022d2        0x6 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x080022d2                EXTI1_IRQHandler
  .text.EXTI2_IRQHandler
-                0x08002290        0x6 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
-                0x08002290                EXTI2_IRQHandler
+                0x080022d8        0x6 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x080022d8                EXTI2_IRQHandler
  .text.EXTI3_IRQHandler
-                0x08002296        0x6 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
-                0x08002296                EXTI3_IRQHandler
+                0x080022de        0x6 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x080022de                EXTI3_IRQHandler
  .text.EXTI4_IRQHandler
-                0x0800229c        0x6 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
-                0x0800229c                EXTI4_IRQHandler
+                0x080022e4        0x6 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x080022e4                EXTI4_IRQHandler
  .text.EXTI9_5_IRQHandler
-                0x080022a2       0x16 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
-                0x080022a2                EXTI9_5_IRQHandler
+                0x080022ea       0x16 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x080022ea                EXTI9_5_IRQHandler
  .text.EXTI15_10_IRQHandler
-                0x080022b8       0x18 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
-                0x080022b8                EXTI15_10_IRQHandler
+                0x08002300       0x18 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x08002300                EXTI15_10_IRQHandler
  .text.startup._GLOBAL__sub_I__Z22stm32_interrupt_enableP12GPIO_TypeDeftSt8functionIFvvEEm
-                0x080022d0       0xd8 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x08002318       0xd8 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
  .text.exit._GLOBAL__sub_D__Z22stm32_interrupt_enableP12GPIO_TypeDeftSt8functionIFvvEEm
-                0x080023a8       0x1c .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x080023f0       0x1c .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
  .text.LL_GPIO_SetPinPull
-                0x080023c4       0x2a .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/pinmap.c.o
+                0x0800240c       0x2a .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/pinmap.c.o
  .text.pin_in_pinmap
-                0x080023ee       0x1e .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/pinmap.c.o
-                0x080023ee                pin_in_pinmap
+                0x08002436       0x1e .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/pinmap.c.o
+                0x08002436                pin_in_pinmap
  .text.pin_function
-                0x0800240c      0x11c .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/pinmap.c.o
-                0x0800240c                pin_function
+                0x08002454      0x11c .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/pinmap.c.o
+                0x08002454                pin_function
  .text.pinmap_pinout
-                0x08002528       0x1a .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/pinmap.c.o
-                0x08002528                pinmap_pinout
+                0x08002570       0x1a .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/pinmap.c.o
+                0x08002570                pinmap_pinout
  .text.pinmap_find_peripheral
-                0x08002542       0x16 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/pinmap.c.o
-                0x08002542                pinmap_find_peripheral
+                0x0800258a       0x16 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/pinmap.c.o
+                0x0800258a                pinmap_find_peripheral
  .text.pinmap_peripheral
-                0x08002558        0xc .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/pinmap.c.o
-                0x08002558                pinmap_peripheral
+                0x080025a0        0xc .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/pinmap.c.o
+                0x080025a0                pinmap_peripheral
  .text.pinmap_find_pin
-                0x08002564       0x16 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/pinmap.c.o
-                0x08002564                pinmap_find_pin
+                0x080025ac       0x16 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/pinmap.c.o
+                0x080025ac                pinmap_find_pin
  .text.pinmap_pin
-                0x0800257a        0xc .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/pinmap.c.o
-                0x0800257a                pinmap_pin
+                0x080025c2        0xc .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/pinmap.c.o
+                0x080025c2                pinmap_pin
  .text.pinmap_merge_peripheral
-                0x08002586       0x14 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/pinmap.c.o
-                0x08002586                pinmap_merge_peripheral
- *fill*         0x0800259a        0x2 
+                0x080025ce       0x14 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/pinmap.c.o
+                0x080025ce                pinmap_merge_peripheral
+ *fill*         0x080025e2        0x2 
  .text.SystemInit
-                0x0800259c       0x50 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/system_stm32yyxx.c.o
-                0x0800259c                SystemInit
+                0x080025e4       0x50 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/system_stm32yyxx.c.o
+                0x080025e4                SystemInit
  .text.get_timer_obj
-                0x080025ec        0x4 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/timer.c.o
-                0x080025ec                get_timer_obj
+                0x08002634        0x4 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/timer.c.o
+                0x08002634                get_timer_obj
  .text.enableTimerClock
-                0x080025f0       0xa8 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/timer.c.o
-                0x080025f0                enableTimerClock
+                0x08002638       0xa8 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/timer.c.o
+                0x08002638                enableTimerClock
  .text.disableTimerClock
-                0x08002698       0x74 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/timer.c.o
-                0x08002698                disableTimerClock
+                0x080026e0       0x74 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/timer.c.o
+                0x080026e0                disableTimerClock
  .text.getTimerUpIrq
-                0x0800270c       0x48 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/timer.c.o
-                0x0800270c                getTimerUpIrq
+                0x08002754       0x48 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/timer.c.o
+                0x08002754                getTimerUpIrq
  .text.getTimerCCIrq
-                0x08002754       0x4c .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/timer.c.o
-                0x08002754                getTimerCCIrq
+                0x0800279c       0x4c .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/timer.c.o
+                0x0800279c                getTimerCCIrq
  .text.HAL_TIM_Base_MspInit
-                0x080027a0       0x4e .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/timer.c.o
-                0x080027a0                HAL_TIM_Base_MspInit
- *fill*         0x080027ee        0x2 
+                0x080027e8       0x4e .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/timer.c.o
+                0x080027e8                HAL_TIM_Base_MspInit
+ *fill*         0x08002836        0x2 
  .text.uart_init.part.0
-                0x080027f0      0x3e0 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
+                0x08002838      0x3e0 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
  .text.uart_init
-                0x08002bd0       0x16 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
-                0x08002bd0                uart_init
- *fill*         0x08002be6        0x2 
+                0x08002c18       0x16 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
+                0x08002c18                uart_init
+ *fill*         0x08002c2e        0x2 
  .text.serial_rx_active
-                0x08002be8       0x24 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
-                0x08002be8                serial_rx_active
+                0x08002c30       0x24 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
+                0x08002c30                serial_rx_active
  .text.serial_tx_active
-                0x08002c0c       0x24 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
-                0x08002c0c                serial_tx_active
+                0x08002c54       0x24 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
+                0x08002c54                serial_tx_active
  .text.uart_getc
-                0x08002c30       0x38 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
-                0x08002c30                uart_getc
+                0x08002c78       0x38 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
+                0x08002c78                uart_getc
  .text.uart_attach_rx_callback
-                0x08002c68       0x40 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
-                0x08002c68                uart_attach_rx_callback
+                0x08002cb0       0x40 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
+                0x08002cb0                uart_attach_rx_callback
  .text.uart_attach_tx_callback
-                0x08002ca8       0x44 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
-                0x08002ca8                uart_attach_tx_callback
+                0x08002cf0       0x44 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
+                0x08002cf0                uart_attach_tx_callback
  .text.uart_enable_tx
-                0x08002cec       0x20 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
-                0x08002cec                uart_enable_tx
+                0x08002d34       0x20 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
+                0x08002d34                uart_enable_tx
  .text.uart_enable_rx
-                0x08002d0c       0x20 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
-                0x08002d0c                uart_enable_rx
+                0x08002d54       0x20 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
+                0x08002d54                uart_enable_rx
  .text.HAL_UART_RxCpltCallback
-                0x08002d2c        0x8 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
-                0x08002d2c                HAL_UART_RxCpltCallback
+                0x08002d74        0x8 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
+                0x08002d74                HAL_UART_RxCpltCallback
  .text.HAL_UART_TxCpltCallback
-                0x08002d34        0x8 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
-                0x08002d34                HAL_UART_TxCpltCallback
+                0x08002d7c        0x8 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
+                0x08002d7c                HAL_UART_TxCpltCallback
  .text.HAL_UART_ErrorCallback
-                0x08002d3c       0x48 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
-                0x08002d3c                HAL_UART_ErrorCallback
+                0x08002d84       0x48 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
+                0x08002d84                HAL_UART_ErrorCallback
  .text.USART1_IRQHandler
-                0x08002d84       0x18 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
-                0x08002d84                USART1_IRQHandler
+                0x08002dcc       0x18 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
+                0x08002dcc                USART1_IRQHandler
  .text.USART2_IRQHandler
-                0x08002d9c       0x1c .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
-                0x08002d9c                USART2_IRQHandler
+                0x08002de4       0x1c .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
+                0x08002de4                USART2_IRQHandler
  .text.USART3_IRQHandler
-                0x08002db8       0x1c .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
-                0x08002db8                USART3_IRQHandler
+                0x08002e00       0x1c .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
+                0x08002e00                USART3_IRQHandler
  .text.LPUART1_IRQHandler
-                0x08002dd4       0x18 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
-                0x08002dd4                LPUART1_IRQHandler
+                0x08002e1c       0x18 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
+                0x08002e1c                LPUART1_IRQHandler
  .text.HAL_UARTEx_WakeupCallback
-                0x08002dec        0xa .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
-                0x08002dec                HAL_UARTEx_WakeupCallback
- *fill*         0x08002df6        0x2 
- .text._sbrk    0x08002df8       0x3c .pio/build/L412RB_P_debug/SrcWrapper/src/syscalls.c.o
-                0x08002df8                _sbrk
- .text._exit    0x08002e34        0x2 .pio/build/L412RB_P_debug/SrcWrapper/src/syscalls.c.o
-                0x08002e34                _exit
- *fill*         0x08002e36        0x2 
- .text._kill    0x08002e38       0x10 .pio/build/L412RB_P_debug/SrcWrapper/src/syscalls.c.o
-                0x08002e38                _kill
- .text._getpid  0x08002e48        0x4 .pio/build/L412RB_P_debug/SrcWrapper/src/syscalls.c.o
-                0x08002e48                _getpid
+                0x08002e34        0xa .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/uart.c.o
+                0x08002e34                HAL_UARTEx_WakeupCallback
+ *fill*         0x08002e3e        0x2 
+ .text._sbrk    0x08002e40       0x3c .pio/build/L412RB_P_debug/SrcWrapper/src/syscalls.c.o
+                0x08002e40                _sbrk
+ .text._exit    0x08002e7c        0x2 .pio/build/L412RB_P_debug/SrcWrapper/src/syscalls.c.o
+                0x08002e7c                _exit
+ *fill*         0x08002e7e        0x2 
+ .text._kill    0x08002e80       0x10 .pio/build/L412RB_P_debug/SrcWrapper/src/syscalls.c.o
+                0x08002e80                _kill
+ .text._getpid  0x08002e90        0x4 .pio/build/L412RB_P_debug/SrcWrapper/src/syscalls.c.o
+                0x08002e90                _getpid
  .text._Z14onPressButton1v
-                0x08002e4c       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
-                0x08002e4c                onPressButton1()
+                0x08002e94       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x08002e94                onPressButton1()
  .text._Z16onReleaseButton1v
-                0x08002e5c       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
-                0x08002e5c                onReleaseButton1()
+                0x08002ea4       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x08002ea4                onReleaseButton1()
  .text._Z14onPressButton2v
-                0x08002e6c       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
-                0x08002e6c                onPressButton2()
+                0x08002eb4       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x08002eb4                onPressButton2()
  .text._Z16onReleaseButton2v
-                0x08002e7c       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
-                0x08002e7c                onReleaseButton2()
+                0x08002ec4       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x08002ec4                onReleaseButton2()
  .text._Z14onPressButton3v
-                0x08002e8c       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
-                0x08002e8c                onPressButton3()
+                0x08002ed4       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x08002ed4                onPressButton3()
  .text._Z16onReleaseButton3v
-                0x08002e9c       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
-                0x08002e9c                onReleaseButton3()
+                0x08002ee4       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x08002ee4                onReleaseButton3()
  .text._Z14onPressButton4v
-                0x08002eac       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
-                0x08002eac                onPressButton4()
+                0x08002ef4       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x08002ef4                onPressButton4()
  .text._Z16onReleaseButton4v
-                0x08002ebc       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
-                0x08002ebc                onReleaseButton4()
+                0x08002f04       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x08002f04                onReleaseButton4()
  .text._Z14onPressButton5v
-                0x08002ecc       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
-                0x08002ecc                onPressButton5()
+                0x08002f14       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x08002f14                onPressButton5()
  .text._Z16onReleaseButton5v
-                0x08002edc       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
-                0x08002edc                onReleaseButton5()
+                0x08002f24       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x08002f24                onReleaseButton5()
  .text._Z14onPressButton6v
-                0x08002eec       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
-                0x08002eec                onPressButton6()
+                0x08002f34       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x08002f34                onPressButton6()
  .text._Z16onReleaseButton6v
-                0x08002efc       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
-                0x08002efc                onReleaseButton6()
- .text._ZN13ButtonManager14assignFunctionEhPFvvES1_bm.isra.0
-                0x08002f0c       0x7c .pio/build/L412RB_P_debug/src/main.cpp.o
- .text.setup    0x08002f88       0xc8 .pio/build/L412RB_P_debug/src/main.cpp.o
-                0x08002f88                setup
- .text.loop     0x08003050       0xb4 .pio/build/L412RB_P_debug/src/main.cpp.o
-                0x08003050                loop
+                0x08002f44       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x08002f44                onReleaseButton6()
+ .text.loop     0x08002f54       0xc0 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x08002f54                loop
+ .text._ZNSt8functionIFvvEEaSERKS1_.isra.0
+                0x08003014       0x42 .pio/build/L412RB_P_debug/src/main.cpp.o
+ .text._ZN13ButtonManager14assignFunctionEhSt8functionIFvvEES2_bm.isra.0
+                0x08003056       0xb6 .pio/build/L412RB_P_debug/src/main.cpp.o
+ .text._ZNSt8functionIFvvEEC2IRS0_vEEOT_
+                0x0800310c       0x18 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x0800310c                std::function<void ()>::function<void (&)(), void>(void (&)())
+                0x0800310c                std::function<void ()>::function<void (&)(), void>(void (&)())
+ .text.setup    0x08003124      0x174 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x08003124                setup
  .text.startup._GLOBAL__sub_I_buttons
-                0x08003104       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x08003298       0x10 .pio/build/L412RB_P_debug/src/main.cpp.o
  .text._ZN14HardwareSerial9availableEv
-                0x08003114       0x10 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08003114                HardwareSerial::available()
+                0x080032a8       0x10 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x080032a8                HardwareSerial::available()
  .text._ZN14HardwareSerial4peekEv
-                0x08003124       0x1a .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08003124                HardwareSerial::peek()
+                0x080032b8       0x1a .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x080032b8                HardwareSerial::peek()
  .text._ZN14HardwareSerial17availableForWriteEv
-                0x0800313e       0x1c .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x0800313e                HardwareSerial::availableForWrite()
+                0x080032d2       0x1c .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x080032d2                HardwareSerial::availableForWrite()
  .text._ZN14HardwareSerial5writeEh
-                0x0800315a       0x18 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x0800315a                HardwareSerial::write(unsigned char)
+                0x080032ee       0x18 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x080032ee                HardwareSerial::write(unsigned char)
  .text._ZN14HardwareSerial16_rx_complete_irqEP8serial_s
-                0x08003172       0x38 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08003172                HardwareSerial::_rx_complete_irq(serial_s*)
- *fill*         0x080031aa        0x2 
+                0x08003306       0x38 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08003306                HardwareSerial::_rx_complete_irq(serial_s*)
+ *fill*         0x0800333e        0x2 
  .text._ZN14HardwareSerial16_tx_complete_irqEP8serial_s
-                0x080031ac       0x64 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x080031ac                HardwareSerial::_tx_complete_irq(serial_s*)
+                0x08003340       0x64 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08003340                HardwareSerial::_tx_complete_irq(serial_s*)
  .text._ZN14HardwareSerial5writeEPKhj
-                0x08003210       0xe4 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08003210                HardwareSerial::write(unsigned char const*, unsigned int)
+                0x080033a4       0xe4 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x080033a4                HardwareSerial::write(unsigned char const*, unsigned int)
  .text._ZN14HardwareSerial4initE7PinNameS0_S0_S0_
-                0x080032f4       0x32 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x080032f4                HardwareSerial::init(PinName, PinName, PinName, PinName)
+                0x08003488       0x32 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08003488                HardwareSerial::init(PinName, PinName, PinName, PinName)
  .text._ZN14HardwareSerial5flushEm
-                0x08003326       0x36 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08003326                HardwareSerial::flush(unsigned long)
+                0x080034ba       0x36 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x080034ba                HardwareSerial::flush(unsigned long)
  .text._ZN14HardwareSerial5flushEv
-                0x0800335c        0x6 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x0800335c                HardwareSerial::flush()
- *fill*         0x08003362        0x2 
+                0x080034f0        0x6 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x080034f0                HardwareSerial::flush()
+ *fill*         0x080034f6        0x2 
  .text._ZN14HardwareSerial5setRxEm
-                0x08003364       0x48 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08003364                HardwareSerial::setRx(unsigned long)
+                0x080034f8       0x48 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x080034f8                HardwareSerial::setRx(unsigned long)
  .text._ZN14HardwareSerial5setTxEm
-                0x080033ac       0x48 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x080033ac                HardwareSerial::setTx(unsigned long)
+                0x08003540       0x48 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08003540                HardwareSerial::setTx(unsigned long)
  .text._ZN14HardwareSerialC2EPv16HalfDuplexMode_t
-                0x080033f4       0x9c .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x080033f4                HardwareSerial::HardwareSerial(void*, HalfDuplexMode_t)
-                0x080033f4                HardwareSerial::HardwareSerial(void*, HalfDuplexMode_t)
+                0x08003588       0x9c .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08003588                HardwareSerial::HardwareSerial(void*, HalfDuplexMode_t)
+                0x08003588                HardwareSerial::HardwareSerial(void*, HalfDuplexMode_t)
  .text._ZN14HardwareSerial18enableHalfDuplexRxEv
-                0x08003490       0x2c .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08003490                HardwareSerial::enableHalfDuplexRx()
+                0x08003624       0x2c .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08003624                HardwareSerial::enableHalfDuplexRx()
  .text._ZN14HardwareSerial5beginEmh
-                0x080034bc       0x7c .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x080034bc                HardwareSerial::begin(unsigned long, unsigned char)
+                0x08003650       0x7c .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x08003650                HardwareSerial::begin(unsigned long, unsigned char)
  .text._ZN14HardwareSerial4readEv
-                0x08003538       0x2e .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08003538                HardwareSerial::read()
- *fill*         0x08003566        0x2 
+                0x080036cc       0x2e .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x080036cc                HardwareSerial::read()
+ *fill*         0x080036fa        0x2 
  .text.startup._GLOBAL__sub_I_SerialLP1
-                0x08003568       0x14 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x080036fc       0x14 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
  .text._ZN5Print5writeEPKc
-                0x0800357c       0x20 .pio/build/L412RB_P_debug/libFrameworkArduino.a(Print.cpp.o)
-                0x0800357c                Print::write(char const*)
+                0x08003710       0x20 .pio/build/L412RB_P_debug/libFrameworkArduino.a(Print.cpp.o)
+                0x08003710                Print::write(char const*)
  .text._ZN5Print7printlnEv
-                0x0800359c       0x10 .pio/build/L412RB_P_debug/libFrameworkArduino.a(Print.cpp.o)
-                0x0800359c                Print::println()
+                0x08003730       0x10 .pio/build/L412RB_P_debug/libFrameworkArduino.a(Print.cpp.o)
+                0x08003730                Print::println()
  .text._ZN5Print7printlnEPK19__FlashStringHelper
-                0x080035ac       0x14 .pio/build/L412RB_P_debug/libFrameworkArduino.a(Print.cpp.o)
-                0x080035ac                Print::println(__FlashStringHelper const*)
+                0x08003740       0x14 .pio/build/L412RB_P_debug/libFrameworkArduino.a(Print.cpp.o)
+                0x08003740                Print::println(__FlashStringHelper const*)
  .text._ZN5Print7printlnEPKc
-                0x080035c0        0x4 .pio/build/L412RB_P_debug/libFrameworkArduino.a(Print.cpp.o)
-                0x080035c0                Print::println(char const*)
+                0x08003754        0x4 .pio/build/L412RB_P_debug/libFrameworkArduino.a(Print.cpp.o)
+                0x08003754                Print::println(char const*)
  .text._ZN6Stream9timedReadEv
-                0x080035c4       0x2a .pio/build/L412RB_P_debug/libFrameworkArduino.a(Stream.cpp.o)
-                0x080035c4                Stream::timedRead()
+                0x08003758       0x2a .pio/build/L412RB_P_debug/libFrameworkArduino.a(Stream.cpp.o)
+                0x08003758                Stream::timedRead()
  .text._ZN6Stream9readBytesEPcj
-                0x080035ee       0x22 .pio/build/L412RB_P_debug/libFrameworkArduino.a(Stream.cpp.o)
-                0x080035ee                Stream::readBytes(char*, unsigned int)
+                0x08003782       0x22 .pio/build/L412RB_P_debug/libFrameworkArduino.a(Stream.cpp.o)
+                0x08003782                Stream::readBytes(char*, unsigned int)
  .text._ZN6Stream14readBytesUntilEcPcj
-                0x08003610       0x30 .pio/build/L412RB_P_debug/libFrameworkArduino.a(Stream.cpp.o)
-                0x08003610                Stream::readBytesUntil(char, char*, unsigned int)
+                0x080037a4       0x30 .pio/build/L412RB_P_debug/libFrameworkArduino.a(Stream.cpp.o)
+                0x080037a4                Stream::readBytesUntil(char, char*, unsigned int)
  .text.startup._Z7premainv
-                0x08003640       0x10 .pio/build/L412RB_P_debug/libFrameworkArduino.a(main.cpp.o)
-                0x08003640                premain()
+                0x080037d4       0x10 .pio/build/L412RB_P_debug/libFrameworkArduino.a(main.cpp.o)
+                0x080037d4                premain()
  .text.startup.main
-                0x08003650       0x14 .pio/build/L412RB_P_debug/libFrameworkArduino.a(main.cpp.o)
-                0x08003650                main
+                0x080037e4       0x14 .pio/build/L412RB_P_debug/libFrameworkArduino.a(main.cpp.o)
+                0x080037e4                main
  .text.Reset_Handler
-                0x08003664       0x50 .pio/build/L412RB_P_debug/libFrameworkArduino.a(startup_stm32yyxx.S.o)
-                0x08003664                Reset_Handler
+                0x080037f8       0x50 .pio/build/L412RB_P_debug/libFrameworkArduino.a(startup_stm32yyxx.S.o)
+                0x080037f8                Reset_Handler
  .text.Default_Handler
-                0x080036b4        0x2 .pio/build/L412RB_P_debug/libFrameworkArduino.a(startup_stm32yyxx.S.o)
-                0x080036b4                RTC_Alarm_IRQHandler
-                0x080036b4                DebugMon_Handler
-                0x080036b4                TSC_IRQHandler
-                0x080036b4                HardFault_Handler
-                0x080036b4                TAMP_STAMP_IRQHandler
-                0x080036b4                PendSV_Handler
-                0x080036b4                NMI_Handler
-                0x080036b4                LPTIM2_IRQHandler
-                0x080036b4                I2C3_ER_IRQHandler
-                0x080036b4                I2C2_EV_IRQHandler
-                0x080036b4                FPU_IRQHandler
-                0x080036b4                UsageFault_Handler
-                0x080036b4                ADC1_2_IRQHandler
-                0x080036b4                SPI1_IRQHandler
-                0x080036b4                DMA2_Channel2_IRQHandler
-                0x080036b4                DMA1_Channel4_IRQHandler
-                0x080036b4                DMA1_Channel7_IRQHandler
-                0x080036b4                DMA2_Channel1_IRQHandler
-                0x080036b4                QUADSPI_IRQHandler
-                0x080036b4                I2C1_EV_IRQHandler
-                0x080036b4                DMA1_Channel6_IRQHandler
-                0x080036b4                DMA2_Channel4_IRQHandler
-                0x080036b4                RCC_IRQHandler
-                0x080036b4                TIM1_TRG_COM_IRQHandler
-                0x080036b4                DMA1_Channel1_IRQHandler
-                0x080036b4                Default_Handler
-                0x080036b4                DMA2_Channel7_IRQHandler
-                0x080036b4                I2C3_EV_IRQHandler
-                0x080036b4                USB_IRQHandler
-                0x080036b4                RTC_WKUP_IRQHandler
-                0x080036b4                PVD_PVM_IRQHandler
-                0x080036b4                SPI2_IRQHandler
-                0x080036b4                MemManage_Handler
-                0x080036b4                SVC_Handler
-                0x080036b4                DMA2_Channel5_IRQHandler
-                0x080036b4                CRS_IRQHandler
-                0x080036b4                DMA1_Channel5_IRQHandler
-                0x080036b4                RNG_IRQHandler
-                0x080036b4                DMA1_Channel3_IRQHandler
-                0x080036b4                COMP_IRQHandler
-                0x080036b4                WWDG_IRQHandler
-                0x080036b4                DMA2_Channel6_IRQHandler
-                0x080036b4                I2C2_ER_IRQHandler
-                0x080036b4                DMA1_Channel2_IRQHandler
-                0x080036b4                FLASH_IRQHandler
-                0x080036b4                BusFault_Handler
-                0x080036b4                I2C1_ER_IRQHandler
-                0x080036b4                LPTIM1_IRQHandler
-                0x080036b4                DMA2_Channel3_IRQHandler
- *fill*         0x080036b6        0x2 
- .text.pinMode  0x080036b8       0xbc .pio/build/L412RB_P_debug/libFrameworkArduino.a(wiring_digital.c.o)
-                0x080036b8                pinMode
+                0x08003848        0x2 .pio/build/L412RB_P_debug/libFrameworkArduino.a(startup_stm32yyxx.S.o)
+                0x08003848                RTC_Alarm_IRQHandler
+                0x08003848                DebugMon_Handler
+                0x08003848                TSC_IRQHandler
+                0x08003848                HardFault_Handler
+                0x08003848                TAMP_STAMP_IRQHandler
+                0x08003848                PendSV_Handler
+                0x08003848                NMI_Handler
+                0x08003848                LPTIM2_IRQHandler
+                0x08003848                I2C3_ER_IRQHandler
+                0x08003848                I2C2_EV_IRQHandler
+                0x08003848                FPU_IRQHandler
+                0x08003848                UsageFault_Handler
+                0x08003848                ADC1_2_IRQHandler
+                0x08003848                SPI1_IRQHandler
+                0x08003848                DMA2_Channel2_IRQHandler
+                0x08003848                DMA1_Channel4_IRQHandler
+                0x08003848                DMA1_Channel7_IRQHandler
+                0x08003848                DMA2_Channel1_IRQHandler
+                0x08003848                QUADSPI_IRQHandler
+                0x08003848                I2C1_EV_IRQHandler
+                0x08003848                DMA1_Channel6_IRQHandler
+                0x08003848                DMA2_Channel4_IRQHandler
+                0x08003848                RCC_IRQHandler
+                0x08003848                TIM1_TRG_COM_IRQHandler
+                0x08003848                DMA1_Channel1_IRQHandler
+                0x08003848                Default_Handler
+                0x08003848                DMA2_Channel7_IRQHandler
+                0x08003848                I2C3_EV_IRQHandler
+                0x08003848                USB_IRQHandler
+                0x08003848                RTC_WKUP_IRQHandler
+                0x08003848                PVD_PVM_IRQHandler
+                0x08003848                SPI2_IRQHandler
+                0x08003848                MemManage_Handler
+                0x08003848                SVC_Handler
+                0x08003848                DMA2_Channel5_IRQHandler
+                0x08003848                CRS_IRQHandler
+                0x08003848                DMA1_Channel5_IRQHandler
+                0x08003848                RNG_IRQHandler
+                0x08003848                DMA1_Channel3_IRQHandler
+                0x08003848                COMP_IRQHandler
+                0x08003848                WWDG_IRQHandler
+                0x08003848                DMA2_Channel6_IRQHandler
+                0x08003848                I2C2_ER_IRQHandler
+                0x08003848                DMA1_Channel2_IRQHandler
+                0x08003848                FLASH_IRQHandler
+                0x08003848                BusFault_Handler
+                0x08003848                I2C1_ER_IRQHandler
+                0x08003848                LPTIM1_IRQHandler
+                0x08003848                DMA2_Channel3_IRQHandler
+ *fill*         0x0800384a        0x2 
+ .text.pinMode  0x0800384c       0xbc .pio/build/L412RB_P_debug/libFrameworkArduino.a(wiring_digital.c.o)
+                0x0800384c                pinMode
  .text.digitalWrite
-                0x08003774       0x70 .pio/build/L412RB_P_debug/libFrameworkArduino.a(wiring_digital.c.o)
-                0x08003774                digitalWrite
+                0x08003908       0x70 .pio/build/L412RB_P_debug/libFrameworkArduino.a(wiring_digital.c.o)
+                0x08003908                digitalWrite
  .text.digitalRead
-                0x080037e4       0x68 .pio/build/L412RB_P_debug/libFrameworkArduino.a(wiring_digital.c.o)
-                0x080037e4                digitalRead
- .text.millis   0x0800384c        0x4 .pio/build/L412RB_P_debug/libFrameworkArduino.a(wiring_time.c.o)
-                0x0800384c                millis
+                0x08003978       0x68 .pio/build/L412RB_P_debug/libFrameworkArduino.a(wiring_digital.c.o)
+                0x08003978                digitalRead
+ .text.millis   0x080039e0        0x4 .pio/build/L412RB_P_debug/libFrameworkArduino.a(wiring_time.c.o)
+                0x080039e0                millis
  .text._Z14serialEventRunv
-                0x08003850       0x1c .pio/build/L412RB_P_debug/libFrameworkArduino.a(WSerial.cpp.o)
-                0x08003850                serialEventRun()
- .text.init     0x0800386c        0x4 .pio/build/L412RB_P_debug/libFrameworkArduino.a(board.c.o)
-                0x0800386c                init
+                0x080039e4       0x1c .pio/build/L412RB_P_debug/libFrameworkArduino.a(WSerial.cpp.o)
+                0x080039e4                serialEventRun()
+ .text.init     0x08003a00        0x4 .pio/build/L412RB_P_debug/libFrameworkArduino.a(board.c.o)
+                0x08003a00                init
  .text.__udivmoddi4
-                0x08003870      0x2bc /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
-                0x08003870                __udivmoddi4
+                0x08003a04      0x2bc /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                0x08003a04                __udivmoddi4
  .text.unlikely._ZSt25__throw_bad_function_callv
-                0x08003b2c        0x6 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(functional.o)
-                0x08003b2c                std::__throw_bad_function_call()
- .text.abort    0x08003b32        0xe /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-abort.o)
-                0x08003b32                abort
- .text.malloc   0x08003b40       0x10 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-malloc.o)
-                0x08003b40                malloc
- .text.free     0x08003b50       0x10 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-malloc.o)
-                0x08003b50                free
+                0x08003cc0        0x6 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a(functional.o)
+                0x08003cc0                std::__throw_bad_function_call()
+ .text.abort    0x08003cc6        0xe /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-abort.o)
+                0x08003cc6                abort
+ .text.malloc   0x08003cd4       0x10 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-malloc.o)
+                0x08003cd4                malloc
+ .text.free     0x08003ce4       0x10 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-malloc.o)
+                0x08003ce4                free
  .text.sbrk_aligned
-                0x08003b60       0x44 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-mallocr.o)
+                0x08003cf4       0x44 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-mallocr.o)
  .text._malloc_r
-                0x08003ba4      0x100 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-mallocr.o)
-                0x08003ba4                _malloc_r
+                0x08003d38      0x100 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-mallocr.o)
+                0x08003d38                _malloc_r
  .text.__malloc_lock
-                0x08003ca4        0xc /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-mlock.o)
-                0x08003ca4                __malloc_lock
+                0x08003e38        0xc /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-mlock.o)
+                0x08003e38                __malloc_lock
  .text.__malloc_unlock
-                0x08003cb0        0xc /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-mlock.o)
-                0x08003cb0                __malloc_unlock
- .text.memset   0x08003cbc       0x10 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-memset.o)
-                0x08003cbc                memset
+                0x08003e44        0xc /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-mlock.o)
+                0x08003e44                __malloc_unlock
+ .text.memset   0x08003e50       0x10 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-memset.o)
+                0x08003e50                memset
  .text._raise_r
-                0x08003ccc       0x50 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-signal.o)
-                0x08003ccc                _raise_r
- .text.raise    0x08003d1c       0x10 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-signal.o)
-                0x08003d1c                raise
- .text._kill_r  0x08003d2c       0x24 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-signalr.o)
-                0x08003d2c                _kill_r
+                0x08003e60       0x50 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-signal.o)
+                0x08003e60                _raise_r
+ .text.raise    0x08003eb0       0x10 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-signal.o)
+                0x08003eb0                raise
+ .text._kill_r  0x08003ec0       0x24 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-signalr.o)
+                0x08003ec0                _kill_r
  .text._getpid_r
-                0x08003d50        0x4 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-signalr.o)
-                0x08003d50                _getpid_r
- .text._sbrk_r  0x08003d54       0x20 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-sbrkr.o)
-                0x08003d54                _sbrk_r
+                0x08003ee4        0x4 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-signalr.o)
+                0x08003ee4                _getpid_r
+ .text._sbrk_r  0x08003ee8       0x20 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-sbrkr.o)
+                0x08003ee8                _sbrk_r
  .text.__libc_init_array
-                0x08003d74       0x48 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-init.o)
-                0x08003d74                __libc_init_array
+                0x08003f08       0x48 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-init.o)
+                0x08003f08                __libc_init_array
  .text.__retarget_lock_acquire_recursive
-                0x08003dbc        0x2 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-lock.o)
-                0x08003dbc                __retarget_lock_acquire_recursive
+                0x08003f50        0x2 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-lock.o)
+                0x08003f50                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x08003dbe        0x2 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-lock.o)
-                0x08003dbe                __retarget_lock_release_recursive
- .text.memcpy   0x08003dc0       0x1c /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-memcpy-stub.o)
-                0x08003dc0                memcpy
- .text._free_r  0x08003ddc       0x94 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-freer.o)
-                0x08003ddc                _free_r
+                0x08003f52        0x2 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-lock.o)
+                0x08003f52                __retarget_lock_release_recursive
+ .text.memcpy   0x08003f54       0x1c /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-memcpy-stub.o)
+                0x08003f54                memcpy
+ .text._free_r  0x08003f70       0x94 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-freer.o)
+                0x08003f70                _free_r
  *(.glue_7)
- .glue_7        0x08003e70        0x0 linker stubs
+ .glue_7        0x08004004        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08003e70        0x0 linker stubs
+ .glue_7t       0x08004004        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08003e70        0x0 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x08004004        0x0 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x08003e70        0x4 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08003e70                _init
- .init          0x08003e74        0x8 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x08004004        0x4 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08004004                _init
+ .init          0x08004008        0x8 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x08003e7c        0x4 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08003e7c                _fini
- .fini          0x08003e80        0x8 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
-                0x08003e88                        . = ALIGN (0x4)
-                0x08003e88                        _etext = .
+ .fini          0x08004010        0x4 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08004010                _fini
+ .fini          0x08004014        0x8 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x0800401c                        . = ALIGN (0x4)
+                0x0800401c                        _etext = .
 
-.vfp11_veneer   0x08003e88        0x0
- .vfp11_veneer  0x08003e88        0x0 linker stubs
+.vfp11_veneer   0x0800401c        0x0
+ .vfp11_veneer  0x0800401c        0x0 linker stubs
 
-.v4_bx          0x08003e88        0x0
- .v4_bx         0x08003e88        0x0 linker stubs
+.v4_bx          0x0800401c        0x0
+ .v4_bx         0x0800401c        0x0 linker stubs
 
-.iplt           0x08003e88        0x0
- .iplt          0x08003e88        0x0 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x0800401c        0x0
+ .iplt          0x0800401c        0x0 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x08003e88      0x5d4
-                0x08003e88                        . = ALIGN (0x4)
+.rodata         0x0800401c      0x5d4
+                0x0800401c                        . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.PinMap_UART_CTS
-                0x08003e88       0x60 .pio/build/L412RB_P_debug/FrameworkArduinoVariant/PeripheralPins.c.o
-                0x08003e88                PinMap_UART_CTS
+                0x0800401c       0x60 .pio/build/L412RB_P_debug/FrameworkArduinoVariant/PeripheralPins.c.o
+                0x0800401c                PinMap_UART_CTS
  .rodata.PinMap_UART_RTS
-                0x08003ee8       0x6c .pio/build/L412RB_P_debug/FrameworkArduinoVariant/PeripheralPins.c.o
-                0x08003ee8                PinMap_UART_RTS
+                0x0800407c       0x6c .pio/build/L412RB_P_debug/FrameworkArduinoVariant/PeripheralPins.c.o
+                0x0800407c                PinMap_UART_RTS
  .rodata.PinMap_UART_RX
-                0x08003f54       0x78 .pio/build/L412RB_P_debug/FrameworkArduinoVariant/PeripheralPins.c.o
-                0x08003f54                PinMap_UART_RX
+                0x080040e8       0x78 .pio/build/L412RB_P_debug/FrameworkArduinoVariant/PeripheralPins.c.o
+                0x080040e8                PinMap_UART_RX
  .rodata.PinMap_UART_TX
-                0x08003fcc       0x78 .pio/build/L412RB_P_debug/FrameworkArduinoVariant/PeripheralPins.c.o
-                0x08003fcc                PinMap_UART_TX
+                0x08004160       0x78 .pio/build/L412RB_P_debug/FrameworkArduinoVariant/PeripheralPins.c.o
+                0x08004160                PinMap_UART_TX
  .rodata.PinMap_TIM
-                0x08004044      0x15c .pio/build/L412RB_P_debug/FrameworkArduinoVariant/PeripheralPins.c.o
-                0x08004044                PinMap_TIM
+                0x080041d8      0x15c .pio/build/L412RB_P_debug/FrameworkArduinoVariant/PeripheralPins.c.o
+                0x080041d8                PinMap_TIM
  .rodata.analogInputPin
-                0x080041a0       0x3c .pio/build/L412RB_P_debug/FrameworkArduinoVariant/variant_L412RB_P.cpp.o
-                0x080041a0                analogInputPin
+                0x08004334       0x3c .pio/build/L412RB_P_debug/FrameworkArduinoVariant/variant_L412RB_P.cpp.o
+                0x08004334                analogInputPin
  .rodata.digitalPin
-                0x080041dc       0xc8 .pio/build/L412RB_P_debug/FrameworkArduinoVariant/variant_L412RB_P.cpp.o
-                0x080041dc                digitalPin
+                0x08004370       0xc8 .pio/build/L412RB_P_debug/FrameworkArduinoVariant/variant_L412RB_P.cpp.o
+                0x08004370                digitalPin
  .rodata.pin_map_ll
-                0x080042a4       0x40 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/pinmap.c.o
-                0x080042a4                pin_map_ll
+                0x08004438       0x40 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/pinmap.c.o
+                0x08004438                pin_map_ll
  .rodata.MSIRangeTable
-                0x080042e4       0x30 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/system_stm32yyxx.c.o
-                0x080042e4                MSIRangeTable
+                0x08004478       0x30 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/system_stm32yyxx.c.o
+                0x08004478                MSIRangeTable
  .rodata.APBPrescTable
-                0x08004314        0x8 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/system_stm32yyxx.c.o
-                0x08004314                APBPrescTable
+                0x080044a8        0x8 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/system_stm32yyxx.c.o
+                0x080044a8                APBPrescTable
  .rodata.AHBPrescTable
-                0x0800431c       0x10 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/system_stm32yyxx.c.o
-                0x0800431c                AHBPrescTable
+                0x080044b0       0x10 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/system_stm32yyxx.c.o
+                0x080044b0                AHBPrescTable
  .rodata._Z14onPressButton1v.str1.1
-                0x0800432c       0x11 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x080044c0       0x11 .pio/build/L412RB_P_debug/src/main.cpp.o
  .rodata._Z16onReleaseButton1v.str1.1
-                0x0800433d       0x12 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x080044d1       0x12 .pio/build/L412RB_P_debug/src/main.cpp.o
  .rodata._Z14onPressButton2v.str1.1
-                0x0800434f       0x11 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x080044e3       0x11 .pio/build/L412RB_P_debug/src/main.cpp.o
  .rodata._Z16onReleaseButton2v.str1.1
-                0x08004360       0x12 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x080044f4       0x12 .pio/build/L412RB_P_debug/src/main.cpp.o
  .rodata._Z14onPressButton3v.str1.1
-                0x08004372       0x11 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x08004506       0x11 .pio/build/L412RB_P_debug/src/main.cpp.o
  .rodata._Z16onReleaseButton3v.str1.1
-                0x08004383       0x12 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x08004517       0x12 .pio/build/L412RB_P_debug/src/main.cpp.o
  .rodata._Z14onPressButton4v.str1.1
-                0x08004395       0x11 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x08004529       0x11 .pio/build/L412RB_P_debug/src/main.cpp.o
  .rodata._Z16onReleaseButton4v.str1.1
-                0x080043a6       0x12 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x0800453a       0x12 .pio/build/L412RB_P_debug/src/main.cpp.o
  .rodata._Z14onPressButton5v.str1.1
-                0x080043b8       0x11 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x0800454c       0x11 .pio/build/L412RB_P_debug/src/main.cpp.o
  .rodata._Z16onReleaseButton5v.str1.1
-                0x080043c9       0x12 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x0800455d       0x12 .pio/build/L412RB_P_debug/src/main.cpp.o
  .rodata._Z14onPressButton6v.str1.1
-                0x080043db       0x11 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x0800456f       0x11 .pio/build/L412RB_P_debug/src/main.cpp.o
  .rodata._Z16onReleaseButton6v.str1.1
-                0x080043ec       0x12 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x08004580       0x12 .pio/build/L412RB_P_debug/src/main.cpp.o
  .rodata.setup.str1.1
-                0x080043fe       0x17 .pio/build/L412RB_P_debug/src/main.cpp.o
- *fill*         0x08004415        0x3 
+                0x08004592       0x17 .pio/build/L412RB_P_debug/src/main.cpp.o
+ *fill*         0x080045a9        0x3 
  .rodata.CSWTCH.73
-                0x08004418        0xc .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x080045ac        0xc .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
  .rodata.CSWTCH.72
-                0x08004424        0x5 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
- *fill*         0x08004429        0x3 
+                0x080045b8        0x5 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
+ *fill*         0x080045bd        0x3 
  .rodata._ZTV14HardwareSerial
-                0x0800442c       0x2c .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x0800442c                vtable for HardwareSerial
+                0x080045c0       0x2c .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x080045c0                vtable for HardwareSerial
  .rodata._ZN5Print7printlnEv.str1.1
-                0x08004458        0x3 .pio/build/L412RB_P_debug/libFrameworkArduino.a(Print.cpp.o)
-                0x0800445c                        . = ALIGN (0x4)
- *fill*         0x0800445b        0x1 
+                0x080045ec        0x3 .pio/build/L412RB_P_debug/libFrameworkArduino.a(Print.cpp.o)
+                0x080045f0                        . = ALIGN (0x4)
+ *fill*         0x080045ef        0x1 
 
-.ARM.extab      0x0800445c        0x0
-                0x0800445c                        . = ALIGN (0x4)
+.ARM.extab      0x080045f0        0x0
+                0x080045f0                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0800445c                        . = ALIGN (0x4)
+                0x080045f0                        . = ALIGN (0x4)
 
-.ARM            0x0800445c        0x8
-                0x0800445c                        . = ALIGN (0x4)
-                0x0800445c                        __exidx_start = .
+.ARM            0x080045f0        0x8
+                0x080045f0                        . = ALIGN (0x4)
+                0x080045f0                        __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x0800445c        0x8 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-strlen.o)
+ .ARM.exidx     0x080045f0        0x8 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-strlen.o)
  .ARM.exidx.text.__udivmoddi4
-                0x08004464        0x0 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
+                0x080045f8        0x0 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
                                   0x8 (size before relaxing)
-                0x08004464                        __exidx_end = .
-                0x08004464                        . = ALIGN (0x4)
+                0x080045f8                        __exidx_end = .
+                0x080045f8                        . = ALIGN (0x4)
 
-.preinit_array  0x08004464        0x0
-                0x08004464                        . = ALIGN (0x4)
-                0x08004464                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x080045f8        0x0
+                0x080045f8                        . = ALIGN (0x4)
+                0x080045f8                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08004464                        PROVIDE (__preinit_array_end = .)
-                0x08004464                        . = ALIGN (0x4)
+                0x080045f8                        PROVIDE (__preinit_array_end = .)
+                0x080045f8                        . = ALIGN (0x4)
 
-.init_array     0x08004464       0x14
-                0x08004464                        . = ALIGN (0x4)
-                0x08004464                        PROVIDE (__init_array_start = .)
+.init_array     0x080045f8       0x14
+                0x080045f8                        . = ALIGN (0x4)
+                0x080045f8                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00101
-                0x08004464        0x4 .pio/build/L412RB_P_debug/libFrameworkArduino.a(main.cpp.o)
+                0x080045f8        0x4 .pio/build/L412RB_P_debug/libFrameworkArduino.a(main.cpp.o)
  *(.init_array*)
- .init_array    0x08004468        0x4 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
- .init_array    0x0800446c        0x4 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
- .init_array    0x08004470        0x4 .pio/build/L412RB_P_debug/src/main.cpp.o
- .init_array    0x08004474        0x4 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
-                0x08004478                        PROVIDE (__init_array_end = .)
-                0x08004478                        . = ALIGN (0x4)
+ .init_array    0x080045fc        0x4 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .init_array    0x08004600        0x4 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
+ .init_array    0x08004604        0x4 .pio/build/L412RB_P_debug/src/main.cpp.o
+ .init_array    0x08004608        0x4 .pio/build/L412RB_P_debug/libFrameworkArduino.a(HardwareSerial.cpp.o)
+                0x0800460c                        PROVIDE (__init_array_end = .)
+                0x0800460c                        . = ALIGN (0x4)
 
-.fini_array     0x08004478        0x8
-                0x08004478                        . = ALIGN (0x4)
-                0x08004478                        PROVIDE (__fini_array_start = .)
+.fini_array     0x0800460c        0x8
+                0x0800460c                        . = ALIGN (0x4)
+                0x0800460c                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08004478        0x4 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
- .fini_array    0x0800447c        0x4 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
-                0x08004480                        PROVIDE (__fini_array_end = .)
-                0x08004480                        . = ALIGN (0x4)
-                0x08004480                        _sidata = LOADADDR (.data)
+ .fini_array    0x0800460c        0x4 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x08004610        0x4 .pio/build/L412RB_P_debug/SrcWrapper/src/stm32/interrupt.cpp.o
+                0x08004614                        PROVIDE (__fini_array_end = .)
+                0x08004614                        . = ALIGN (0x4)
+                0x08004614                        _sidata = LOADADDR (.data)
 
-.rel.dyn        0x08004480        0x0
- .rel.iplt      0x08004480        0x0 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x08004614        0x0
+ .rel.iplt      0x08004614        0x0 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.data           0x20000000       0x98 load address 0x08004480
+.data           0x20000000       0x98 load address 0x08004614
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -5415,11 +5441,11 @@ LOAD /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm
                 0x20000098                        . = ALIGN (0x4)
                 0x20000098                        _edata = .
 
-.igot.plt       0x20000098        0x0 load address 0x08004518
+.igot.plt       0x20000098        0x0 load address 0x080046ac
  .igot.plt      0x20000098        0x0 /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 0x20000098                        . = ALIGN (0x4)
 
-.bss            0x20000098      0x46c load address 0x08004518
+.bss            0x20000098      0x46c load address 0x080046ac
                 0x20000098                        _sbss = .
                 0x20000098                        __bss_start__ = _sbss
  *(.bss)
@@ -5469,7 +5495,7 @@ LOAD /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm
                 0x20000504                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20000504      0x604 load address 0x08004518
+                0x20000504      0x604 load address 0x080046ac
                 0x20000508                        . = ALIGN (0x8)
  *fill*         0x20000504        0x4 
                 [!provide]                        PROVIDE (end = .)
