@@ -5,12 +5,13 @@
 #define LED PB13
 #define BLINK_DELAY 100
 
-#define BUTTON1_PIN PC0
-#define BUTTON2_PIN PC1
-#define BUTTON3_PIN PC2
-#define BUTTON4_PIN PC3
-#define BUTTON5_PIN PA0
-#define BUTTON6_PIN PA1
+#define BUTTON1_PIN PB2
+#define BUTTON2_PIN PB11
+#define BUTTON3_PIN PA9
+
+#define BUTTON4_PIN PA0
+#define BUTTON5_PIN PA1
+#define BUTTON6_PIN PC3
 
 // Create a ButtonManager instance.
 ButtonManager buttons;
@@ -77,6 +78,7 @@ void setup() {
   buttons.assignFunction(BUTTON4_PIN, onPressButton4, onReleaseButton4);
   buttons.assignFunction(BUTTON5_PIN, onPressButton5, onReleaseButton5);
   buttons.assignFunction(BUTTON6_PIN, onPressButton6, onReleaseButton6);
+  
 
   Serial.begin(115200);
   Serial.println("Button Manager Example");

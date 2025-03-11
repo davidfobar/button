@@ -5044,7 +5044,8 @@ LOAD /home/dave/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm
  .text._ZNSt8functionIFvvEEaSERKS1_.isra.0
                 0x08003014       0x42 .pio/build/L412RB_P_debug/src/main.cpp.o
  .text._ZN13ButtonManager14assignFunctionEhSt8functionIFvvEES2_bm.isra.0
-                0x08003056       0xb6 .pio/build/L412RB_P_debug/src/main.cpp.o
+                0x08003056       0xb4 .pio/build/L412RB_P_debug/src/main.cpp.o
+ *fill*         0x0800310a        0x2 
  .text._ZNSt8functionIFvvEEC2IRS0_vEEOT_
                 0x0800310c       0x18 .pio/build/L412RB_P_debug/src/main.cpp.o
                 0x0800310c                std::function<void ()>::function<void (&)(), void>(void (&)())
